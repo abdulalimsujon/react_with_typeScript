@@ -1,0 +1,32 @@
+@layer components {
+  .btn-solid {
+    @apply px-3 py-2 font-semibold text-white rounded-md;
+    background-color: #dc2626; /* Red */
+  }
+
+  .btn-solid:hover,
+  .btn-solid:focus {
+    background-color: #8b5cf6; /* Purple */
+  }
+
+  .btn-outline {
+    @apply px-3 py-2 font-semibold text-purple-500 rounded-md;
+    background-color: rgba(156, 163, 175, 0.1); /* Semi-transparent purple */
+    border: 1px solid #9f7aea; /* Purple border */
+  }
+
+  .btn-outline:hover {
+    background-color: rgba(156, 163, 175, 0.2); /* More opaque purple */
+  }
+
+  .btn-ghost {
+    @apply px-3 py-2 font-semibold text-purple-500 rounded-md;
+    background-color: transparent;
+    border: 1px solid #9f7aea; /* Purple border */
+  }
+
+  .btn-ghost:hover {
+    background-color: #9f7aea; /* Purple */
+    color: #fff; /* White text */
+  }
+}
