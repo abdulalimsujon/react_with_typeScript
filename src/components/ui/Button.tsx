@@ -16,7 +16,7 @@ type TButton = DetailedHTMLProps<
   TButtonOptions;
 
 const Button = forwardRef<TRef, TButton>(
-  ({ className, variant = "solid", ...rest }, ref) => {
+  ({ className, variant = "solid", children, ...rest }, ref) => {
     // ` bg-purple-500 px-3 py-2 rounded-md ${className} ${
     //   variant == "outline" ? "border border-purple-500 bg-opacity-10" : " "
     // }`
@@ -38,7 +38,7 @@ const Button = forwardRef<TRef, TButton>(
         ref={ref}
         className={cn(getVarient(variant), className)}
       >
-        click
+        {children}
       </button>
     );
   }
