@@ -80,10 +80,11 @@ const NormalForm = () => {
             "md:grid-cols-2 col-start-2 ": double,
           })}
         >
-          <div className="bg-red-500 w-full max-w-md  col-start-1 md:col-start-2 flex justify-end "></div>
-          <Button className="w-full md:w-fit " type="submit">
-            submit
-          </Button>
+          <div className="bg-red-500 w-full max-w-md  col-start-1 md:col-start-2 flex justify-end ">
+            <Button className="w-full md:w-fit " type="submit">
+              submit
+            </Button>
+          </div>
         </div>
       </div>
     </form>
