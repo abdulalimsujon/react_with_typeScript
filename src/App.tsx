@@ -2,7 +2,10 @@ import "./App.css";
 function App() {
   return (
     <div className="main">
-      <button className="btn">click me</button>
+      <div className="loading">
+        <div className="glass"></div>
+        <div className="box"></div>
+      </div>
     </div>
   );
 }
